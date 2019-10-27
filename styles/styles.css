@@ -3,58 +3,83 @@ body {
   margin: 0 auto;
 }
 
-.header {
-  height: 84px;
-  box-sizing: border-box;
-  padding: 20px 0;
-  background-color: #007765;
-}
-
-.header__content {
-  width: 1110px;
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
 }
 
-.header__right {
-  width: 424px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.header__text {
+.menu_item {
+  list-style-type: none;
   font-weight: 500;
   font-size: 24px;
   color: #ffffff;
 }
 
-.block1 {
+.menu_item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav_list {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.nav_list .menu_item:nth-child(2) {
+  border-right: solid 2px #ffffff;
+  border-left: solid 2px #ffffff;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.header {
+  height: 84px;
+  box-sizing: border-box;
+  padding: 20px 55px;
+  background-color: #007765;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav_list {
+  width: 424px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro {
+  width: 100%;
   height: 403px;
   display: flex;
   align-items: center;
-  background-image: url(/images/backgrounds/background_block1.jpg);
+  background-image: url(../images/backgrounds/background_intro.jpg);
 }
 
-.block1__text {
+.intro__text {
   margin: auto;
   font-weight: 500;
   font-size: 72px;
   color: #ffffff;
 }
 
-.block_content {
-  width: 1110px;
-  margin: 0 auto 92px;
+.section_content {
+  max-width: 1110px;
+  padding: 48px 55px 92px;
 }
 
-.block2 {
-  height: 719px;
+.the_problem {
+  min-height: 719px;
+  width: 100%;
   background-color: #eeeeee;
 }
 
-.block2__content {
+.the_problem__content {
   /* height: 579px; */
   display: flex;
   flex-direction: column;
@@ -62,16 +87,16 @@ body {
   align-items: center;
 }
 
-.block_header {
+.section_title {
   text-align: center;
   font-weight: 500;
   font-size: 64px;
-  margin: 48px auto 16px;
+  margin: 0 auto 16px;
   color: #007765;
 }
 
-.block2__text {
-  height: 488px;
+.the_problem__text {
+  min-height: 488px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -82,57 +107,55 @@ body {
   line-height: 37px;
 }
 
-.block3 {
-  height: 483px;
+.action {
+  width: 100%;
+  min-height: 483px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/images/backgrounds/background_block3.jpg);
+  background-image: url(../images/backgrounds/background_action.jpg);
 }
 
-.block3__text {
+.action__text {
   text-align: center;
   width: 893px;
-  height: 228px;
+  min-height: 228px;
   font-style: italic;
   font-weight: 500;
   font-size: 48px;
   color: #ffffff;
 }
 
-.block4 {
-  height: 604px;
+
+
+.introducing {
+  min-height: 604px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.block4__content {
-  height: 512px;
+.introducing__content {
+  min-height: 464px;
 }
 
-.block4__image {
+.introducing__image {
   margin-right: 48px;
   float: left;
 }
 
-.block4__text {
-  height: 223px;
-  margin-top: 35px;
-  font-family: "Roboto", sans-serif;
-}
-
-.block5 {
-  height: 845px;
+.the_team {
+  min-height: 845px;
+  width: 100%;
   background-color: #eeeeee;
 }
 
-.block5__header {
+.the_team__header {
   margin-bottom: 32px;
 }
 
 .team {
-  margin-bottom: 96px;
+  margin: 32px auto 96px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -183,11 +206,11 @@ body {
 
 @media (min-width: 2000px) {
 
-  .block1 {
-    background-image: url(/images/backgrounds/background_block1_2000px.jpg);
+  .intro {
+    background-image: url(../images/backgrounds/background_intro_2000px.jpg);
   }
 
-  .block3 {
-    background-image: url(/images/backgrounds/background_block3_2000px.jpg);
+  .action {
+    background-image: url(../images/backgrounds/background_action_2000px.jpg);
   }
 }
