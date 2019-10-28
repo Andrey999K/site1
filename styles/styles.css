@@ -3,10 +3,25 @@ body {
   margin: 0 auto;
 }
 
+.header {
+  height: 84px;
+  padding: 20px 0 19px;
+  box-sizing: border-box;
+  background-color: #007765;
+}
+
+.center {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .menu__item {
@@ -22,7 +37,8 @@ body {
 }
 
 .nav__menu {
-  width: 424px;
+  max-width: 424px;
+  width: 100%;
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -35,13 +51,6 @@ body {
   border-left: solid 2px #ffffff;
   padding-right: 10px;
   padding-left: 10px;
-}
-
-.header {
-  height: 84px;
-  box-sizing: border-box;
-  padding: 20px 55px;
-  background-color: #007765;
 }
 
 .main {
@@ -65,9 +74,10 @@ body {
   color: #ffffff;
 }
 
-.section_content {
-  max-width: 1110px;
-  padding: 48px 55px 92px;
+.container {
+  max-width: 1140px;
+  padding: 48px 15px 92px;
+  box-sizing: border-box;
 }
 
 .problem {
@@ -84,7 +94,7 @@ body {
   justify-content: space-between;
 }
 
-.section_title {
+.problem__title {
   text-align: center;
   font-weight: 500;
   font-size: 64px;
@@ -92,7 +102,7 @@ body {
   color: #007765;
 }
 
-.block_text {
+.problem__text {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 32px;
@@ -118,16 +128,18 @@ body {
   color: #ffffff;
 }
 
-
-
 .introducing {
   min-height: 604px;
   display: flex;
   justify-content: center;
 }
 
-.introducing__content {
-  min-height: 464px;
+.introducing__title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 64px;
+  margin: 0 auto 16px;
+  color: #007765;
 }
 
 .introducing__image {
@@ -135,7 +147,14 @@ body {
   float: left;
 }
 
-.the_team {
+.introducing__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.the-team {
   display: flex;
   justify-content: center;
   min-height: 845px;
@@ -147,8 +166,12 @@ body {
   padding-bottom: 66px;
 }
 
-.the_team__header {
-  margin-bottom: 32px;
+.the-team__title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 64px;
+  margin: 0 auto 16px;
+  color: #007765;
 }
 
 .team {
@@ -167,17 +190,19 @@ body {
   align-items: center;
 }
 
-.photo {
+.crewman__photo {
   margin: 24px auto 12px;
 }
 
-.name {
+.crewman__name {
+  margin: 0;
   font-weight: bold;
   font-size: 24px;
   color: #007765;
 }
 
-.function {
+.crewman__function {
+  margin: 0;
   font-style: italic;
   font-size: 18px;
   line-height: 21px;
@@ -201,7 +226,6 @@ body {
 }
 
 @media (min-width: 2000px) {
-
   .intro {
     background-image: url(../images/backgrounds/background_intro_2000px.jpg);
   }
