@@ -4,7 +4,8 @@ body {
 }
 
 .header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 84px;
   padding: 20px 0 19px;
@@ -270,17 +271,10 @@ body {
   } */
 
   .nav__menu {
-    display: none;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .responsive {
+    position: fixed;
+    top: -515px;
     max-width: initial;
     z-index: 1000;
-    top: 84px;
     right: 0px;
     width: 100%;
     height: calc(100vh - 84px);
@@ -288,9 +282,19 @@ body {
     justify-content: center;
     align-items: center;
     display: block;
-    position: absolute;
     background: #2b2b2af3;
     transition: all 0.5s ease-in-out;
+  }
+
+  .menu-icon {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  .responsive {
+    top: 84px;
   }
 
   .menu__item {
