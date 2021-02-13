@@ -8,12 +8,11 @@
 //     }
 // }
 
-const menuButton = document.querySelector(".nav__menu");
-console.log(menuButton);
+const menuButton = document.querySelector(".menu-icon");
+const menuList = document.querySelector(".nav__menu");
+
 menuButton.addEventListener("click", () => {
-    console.log("ggg");
-    menuButton.classList.toggle("responsive");
-    
+    menuList.classList.toggle("responsive");
 });
 
 const menu_ = document.querySelector('.nav');
@@ -23,6 +22,6 @@ scrollspy.init();
 const menuLinks = document.querySelectorAll(".menu__link");
 menuLinks.forEach(item => {
     item.addEventListener("click", () => {
-        menuButton.classList.remove("responsive");
+        menuList.classList.remove("responsive");
     });
 });
