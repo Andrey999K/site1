@@ -13,6 +13,7 @@ const menuList = document.querySelector(".nav__menu");
 
 menuButton.addEventListener("click", () => {
     menuList.classList.toggle("responsive");
+    document.body.classList.toggle("no-scroll");
 });
 
 const menu_ = document.querySelector('.nav');
@@ -23,5 +24,6 @@ const menuLinks = document.querySelectorAll(".menu__link");
 menuLinks.forEach(item => {
     item.addEventListener("click", () => {
         menuList.classList.remove("responsive");
+        document.body.classList.remove("no-scroll");
     });
 });
